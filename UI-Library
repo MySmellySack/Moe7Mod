@@ -228,6 +228,7 @@ function Kavo.CreateLib(kavName, themeList)
     ScreenGui.ResetOnSpawn = false
 
     Main.Name = "Main"
+    Main.BackgroundTransparency = 0.2
     Main.Parent = ScreenGui
     Main.BackgroundColor3 = themeList.Background
     Main.ClipsDescendants = true
@@ -236,18 +237,22 @@ function Kavo.CreateLib(kavName, themeList)
 
     MainCorner.CornerRadius = UDim.new(0, 4)
     MainCorner.Name = "MainCorner"
+    MainCorner.BackgroundTransparency = 0.2
     MainCorner.Parent = Main
 
     MainHeader.Name = "MainHeader"
+    MainHeader.BackgroundTransparency = 0.2
     MainHeader.Parent = Main
     MainHeader.BackgroundColor3 = themeList.Header
     Objects[MainHeader] = "BackgroundColor3"
     MainHeader.Size = UDim2.new(0, 525, 0, 29)
     headerCover.CornerRadius = UDim.new(0, 4)
+    headCover.BackgroundTransparency = 0.2
     headerCover.Name = "headerCover"
     headerCover.Parent = MainHeader
 
     coverup.Name = "coverup"
+    coverup.BackgroundTransparency = 0.2
     coverup.Parent = MainHeader
     coverup.BackgroundColor3 = themeList.Header
     Objects[coverup] = "BackgroundColor3"
@@ -283,6 +288,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     MainSide.Name = "MainSide"
     MainSide.Parent = Main
+    MainSide.BackgroundTransparency = 0.2
     MainSide.BackgroundColor3 = themeList.Header
     Objects[MainSide] = "Header"
     MainSide.Position = UDim2.new(-7.4505806e-09, 0, 0.0911949649, 0)
@@ -290,9 +296,11 @@ function Kavo.CreateLib(kavName, themeList)
 
     sideCorner.CornerRadius = UDim.new(0, 4)
     sideCorner.Name = "sideCorner"
+    sideCorner.BackgroundTransparency = 0.2
     sideCorner.Parent = MainSide
 
     coverup_2.Name = "coverup"
+    coverup_2.BackgroundTransparency = 0.2
     coverup_2.Parent = MainSide
     coverup_2.BackgroundColor3 = themeList.Header
     Objects[coverup_2] = "Header"
@@ -309,6 +317,7 @@ function Kavo.CreateLib(kavName, themeList)
 
     tabListing.Name = "tabListing"
     tabListing.Parent = tabFrames
+    tabListing.BackgroundTransparency = 0.2
     tabListing.SortOrder = Enum.SortOrder.LayoutOrder
 
     pages.Name = "pages"
